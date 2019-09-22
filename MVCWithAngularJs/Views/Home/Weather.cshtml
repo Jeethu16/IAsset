@@ -1,0 +1,53 @@
+﻿@{
+    //ViewBag.Title = "Part5";
+}
+
+<h2>IAsset Weather</h2>
+
+<div ng-controller="WeatherAppController">
+    Country : <select ng-model="CountryID" ng-options="I.country_id as I.name for I in CountryList" ng-change="GetCity()">
+                <option value="">Select Country</option>
+              </select>
+    State : <select ng-model="CityID" ng-options="I.city_id as I.name for I in CityList">
+                <option value="">{{CityTextToShow}}</option>
+            </select>
+    <input type="button" class="btn btn-primary" value="Show Weather" ng-click="ShowResult()" ng-disabled="CountryID === null || CityID===null"/>
+    <div style="padding:10px; font-weight:bold; border:1px solid #f3f3f3" ng-show = "IsVisible">
+
+        <table class="table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>City ID</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th>Wind</th>
+                    <th>Visibility</th>
+                    <th>Sky Condition</th>
+                    <th>Temprature</th>
+                    <th>DuePoint</th>
+                    <th>Relative Humidity</th>
+                    <th>Pressure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in Result">
+                    <td>{{item.cityid}}</td>
+                    <td>{{item.location}}</td>
+                    <td>{{item.time}}</td>
+                    <td>{{item.wind}}</td>
+                    <td>{{item.visibility}}</td>
+                    <td>{{item.skyCondition}}</td>
+                    <td>{{item.temprature}}</td>
+                    <td>{{item.duePoint}}</td>
+                    <td>{{item.relativeHumidity}}</td>
+                    <td>{{item.pressure}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/AngularController/WeatherAppController.js"></script>
+}

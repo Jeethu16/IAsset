@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWithAngularJs", "MVCWithAngularJs\MVCWithAngularJs.csproj", "{9A583BD6-2E85-4E86-B887-56A9A5784223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IassetTest", "IassetTest\IassetTest.csproj", "{A1ED3973-48D6-453B-A88F-F11FFDD4A7ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A583BD6-2E85-4E86-B887-56A9A5784223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A583BD6-2E85-4E86-B887-56A9A5784223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A583BD6-2E85-4E86-B887-56A9A5784223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A583BD6-2E85-4E86-B887-56A9A5784223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1ED3973-48D6-453B-A88F-F11FFDD4A7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1ED3973-48D6-453B-A88F-F11FFDD4A7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1ED3973-48D6-453B-A88F-F11FFDD4A7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1ED3973-48D6-453B-A88F-F11FFDD4A7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C13B907-4690-4D27-B9F9-800009390D68}
+	EndGlobalSection
+EndGlobal
